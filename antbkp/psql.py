@@ -25,7 +25,7 @@ class Psql():
 
             process = subprocess.Popen("""
                 export PGPASSWORD=%s
-                pg_dump %s -U %s > %s/backup/backup_%s.sql
+                pg_dump %s -U %s > %s/backup/psql_%s.sql
                 export PGPASSWORD=""" % (password, database, user, backdir, database), 
                 shell=True, stdout=logfile, stderr=logfile)
             process.wait()

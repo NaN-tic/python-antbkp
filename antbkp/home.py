@@ -17,6 +17,6 @@ class Home():
             logger.info('Directory: %s' % home)
 
             process = subprocess.Popen("""
-                tar -cf %s/backup/backup_%s.tar /home/%s/""" % (backdir, home, home), 
+                tar -cf %s/backup/%s.tar /home/%s/""" % (backdir, home, home), 
                 shell=True, stdout=logfile, stderr=logfile)
             process.wait()
