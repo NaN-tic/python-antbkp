@@ -45,10 +45,19 @@ def antbkp(configuration):
         os.makedirs(backdir)
         os.makedirs('%s/backup' % backdir)
 
+    precommand = results['global']['precommand']
+    postcommand = results['global']['postcommand']
+
+    if precommand:
+        os.system(precommand)
+
     for key, vals in results.iteritems():
         logging.info('Run: %s' % key)
         if vals.get('backup'):
             eval(key.capitalize()).run(vals, options)
+
+    if postcommand:
+        os.system(postcommand)
 
 def parse_arguments(arguments):
     parser = optparse.OptionParser(usage='antbkp.py [options]', version=VERSION)
