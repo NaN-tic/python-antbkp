@@ -21,7 +21,7 @@ class Mysql():
             logger.info('Database: %s' % database)
 
             process = subprocess.Popen("""
-                mysqldump --opt --password=%s --user=%s %s > %s/backup/mysql_%s.sql'
+                mysqldump --opt --password=%s --user=%s %s > %s/backup/mysql_%s.sql
                 """ % (password, user, database, backdir, database), 
                 shell=True, stdout=logfile, stderr=logfile)
             process.wait()
