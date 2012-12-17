@@ -28,7 +28,7 @@ class Rotate():
                 logger.info('Create directory: %s' % directory)
                 os.makedirs(d)
 
-        directories = ['backup', 'backup1', 'backup2', 'backup3', 'backup4', 'backup5', 'backup6', 
+        directories = ['backup', 'backup2', 'backup3', 'backup4', 'backup5', 'backup6', 
             'backup7', 'backup_w2', 'backup_w3', 'backup_w4', 'backup_m2', 'backup_m3', 
             'backup_m4', 'backup_m5', 'backup_m6', 'backup_m7', 'backup_m8', 'backup_m9', 'backup_m10', 
             'backup_m11', 'backup_m12']
