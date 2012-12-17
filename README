@@ -1,0 +1,39 @@
+Ant Backup
+==========
+
+Simple Backup system to backup yours servers.
+
+Installing
+----------
+
+See INSTALL
+
+Package Contents
+----------------
+
+  etc/
+      Configuration files.
+
+  antbkp/
+      Ant Backup sources.
+
+License
+-------
+
+See LICENSE
+
+Copyright
+---------
+
+See COPYRIGHT
+
+Configuration
+-------------
+
+Copy etc/antbkp.cfg and configure options
+
+
+Example to use
+--------------
+
+    $ antbkp -c /etc/antbkp.cfg
