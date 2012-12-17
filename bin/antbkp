@@ -9,6 +9,7 @@ import logging
 import antbkp
 
 from antbkp.version import VERSION
+from antbkp.rotate import *
 
 def antbkp(configuration):
     config = ConfigParser.ConfigParser()
