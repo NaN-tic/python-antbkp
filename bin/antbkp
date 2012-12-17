@@ -12,6 +12,7 @@ from antbkp.version import VERSION
 from antbkp.rotate import *
 from antbkp.home import *
 from antbkp.psql import *
+from antbkp.mysql import *
 
 def antbkp(configuration):
     config = ConfigParser.ConfigParser()
