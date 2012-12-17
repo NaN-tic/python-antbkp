@@ -10,6 +10,7 @@ import antbkp
 
 from antbkp.version import VERSION
 from antbkp.rotate import *
+from antbkp.home import *
 
 def antbkp(configuration):
     config = ConfigParser.ConfigParser()
