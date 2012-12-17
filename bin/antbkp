@@ -13,6 +13,8 @@ from antbkp.rotate import *
 from antbkp.home import *
 from antbkp.psql import *
 from antbkp.mysql import *
+from antbkp.tryton import *
+from antbkp.openerp import *
 
 def antbkp(configuration):
     config = ConfigParser.ConfigParser()
