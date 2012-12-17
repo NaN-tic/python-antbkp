@@ -46,7 +46,7 @@ def antbkp(configuration):
         os.makedirs('%s/backup' % backdir)
 
     for key, vals in results.iteritems():
-        logging.info('Started %s' % key)
+        logging.info('Run: %s' % key)
         if vals.get('backup'):
             eval(key.capitalize()).run(vals, options)
 
