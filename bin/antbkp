@@ -36,7 +36,8 @@ def antbkp(configuration):
     options['smtp'] = smtp
     options['log'] = results['global']['log']
 
-    logging.basicConfig(filename=options.get('log'), level=logging.INFO)
+    logging.basicConfig(format='%(asctime)s %(message)s', 
+        filename=options.get('log'), level=logging.INFO)
 
     backdir = options.get('backdir')
     if not os.path.exists(backdir):
