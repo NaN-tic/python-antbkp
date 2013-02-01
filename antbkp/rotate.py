@@ -46,7 +46,7 @@ class Rotate():
             call_mv(backdir+'/backup_m9', backdir+'/backup_m10')
             check_dir('backup_m9', backdir)
             call_mv(backdir+'/backup_m8', backdir+'/backup_m9')
-            check_dir('backup_8', backdir)
+            check_dir('backup_m8', backdir)
             call_mv(backdir+'/backup_m7', backdir+'/backup_m8')
             check_dir('backup_m7', backdir)
             call_mv(backdir+'/backup_m6', backdir+'/backup_m7')
